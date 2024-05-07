@@ -1,0 +1,16 @@
+select folder
+mkdr foldername
+cd foldername
+create repo on GitHub
+create text file in vs and save it
+git init
+git add .(filename)
+git status
+go to GitHub click on https and copy the url go to vs
+git remote add origin "paste the url"
+git commit -m "first commit"
+git status
+go to GitHub and refresh page
+go to vs
+git push -u origin master
+go to GitHub and refresh page after refresh you will get output

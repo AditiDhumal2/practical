@@ -1,0 +1,18 @@
+create blank folder
+select path of that folder and type cmd
+npm init
+after that click enter until yes(ok) 
+in vs create index.js file
+go to cmd
+npm install express --save
+module folder is created in vs
+in node js file write
+const express=required('express');
+const app=express();
+create public name folder under the main folder
+create index.html file in public folder
+type html5
+rename title static website
+go to folder and open public folder then open index folder output will generate
+ 
+

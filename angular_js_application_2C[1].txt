@@ -1,0 +1,108 @@
+assignment 2C
+angular js assignment
+
+first node js installation 
+
+in vs code terminal: 
+npm --version
+
+next install angular cli
+in vs code terminal 
+npm install -g @angular/cli@latest
+
+next command 
+ng new part-c
+then it will ask you to would you like to add angular routing ?(y/n)
+you can write y
+enter
+
+ keep it as css 
+and click enter
+
+in your folder on file part c click on that 
+then click on src 
+then app 
+then open the file with html extension
+(app.component.html)
+ then remove all contents from that file
+then type
+
+<h1>{{title}}</h1>
+
+<input type="text" #name placeholder="Enter Your Name" name="Name"> <br>
+
+<input type="text" #adress placeholder="Enter Your Address" name="Address"> <br>
+
+<input type="text" #contact placeholder="Enter Your Number" name="Contact"> <br>
+
+<input type="email" #email placeholder="Enter Your Email" name="Email"> <br>
+
+<input type="password" #password placeholder="Enter Your password" name="Password"> <br>
+
+<button (click)="getValue(name.value, address.value, contact.value, email.value)"> Register </button>
+
+
+
+
+After this code goto to ts extension file
+(app.component.ts)
+in this there will be some code in that code
+the title would be given as part c we have to change it to Registration form
+then click enter
+then add following code
+under the word title
+
+displayname='';
+displayaddress='';
+displaycontact='';
+displayemail='':
+
+getValue(name:string, address:string, contact:string, email:string)
+{
+this.displayname=name;
+this.displayaddress=address;
+this.displayconstact=contact;
+this.displayemail=email;
+}
+
+
+after that save the file
+
+goto again html file
+and in  the end of code 
+add following code
+<h1> Your registered data</h1> <br>
+
+<p> Name: {{dsiplayname}}</p> 
+<p> Address: {{dsiplayaddress}}</p> 
+<p> Contact: {{dsiplayname}}</p> 
+<p>Email: {{dsiplayemail}}</p> 
+
+
+then again goto terminal command
+cd part-c
+
+then
+ng serve
+
+then again type y
+ 
+after successful compilation 
+click or paste the link which is visible in terminal e.g. localhost something or just click on follow link
+ 
+
+
+then open file with css extension
+and type following code
+input{
+ width: 400px;
+ height: 25px;
+ margin: 10px;
+padding: 5px;
+}
+
+then save it
+and open browser
+
+
+ 
